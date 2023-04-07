@@ -1,0 +1,27 @@
+*{
+background-color: black;
+margin:0;
+color:white;
+padding:0;
+}
+:root{
+  --timer-ticks:0;
+  --ppqn: 240;
+}
+.canvas_container {
+  transform: translateX(calc(var(--timer-ticks)/6 * -1px));
+}
+.canvas_window {
+  width:100vw;
+  position:fixed;
+  top:50px;
+  height: calc(100vh-50px);
+  z-index: -2;
+  overflow-x:hidden;
+  overflow-y:scroll;
+}
+
+.float {
+display:none;
+
+}
